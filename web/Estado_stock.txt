@@ -1,0 +1,16 @@
+Código para para indicar el estado del stock de un producto, variando según el estado.
+
+
+                                                <td style="text-align: center;"><%
+                                                    if(objProducto.getEstado_producto().equalsIgnoreCase("Stock")){
+                                                        %>
+                                                        <div  class="badge badge-success badge-pill"><%=objProducto.getEstado_producto()%></div>
+                                                    <%}else if(objProducto.getEstado_producto().equalsIgnoreCase("Reponer Stock")){
+                                                        %>
+                                                        <div class="badge badge-warning badge-pill"><%=objProducto.getEstado_producto()%></div>
+                                                     <%}else{
+                                                     %>
+                                                     <div class="badge badge-danger badge-pill" ><%=objProducto.getEstado_producto()%></div>
+                                                     <%}
+                                                    %>
+                                                </td>
